@@ -28,6 +28,7 @@ https://xkcd.com/1421/
 
 * There is too much of topics we could cover here
 * ... but maybe we shouldn't, but we will as needed <!-- .element: class="fragment" -->
+	* Agile development Methods <!-- .element: class="fragment" -->
 	* Version Control <!-- .element: class="fragment" -->
 	* Software Testing <!-- .element: class="fragment" -->
 	* Clean Code <!-- .element: class="fragment" -->

@@ -1,15 +1,6 @@
-# Game of Life
+# Game of Life (2)
 
-![Game of Life](resources/Gospers_glider_gun.gif)
-
-Johan G. Bonte / [CC-BY-SA-3.0](http://creativecommons.org/licenses/by-sa/3.0/)
-
---
-
-# The Board
-
-* 2D playing field of *cells*
-* Each cell is either dead or alive
+* The board develops over time
 * Neighbours preserve, kill or spawn alive cells
 
 
@@ -27,18 +18,18 @@ Johan G. Bonte / [CC-BY-SA-3.0](http://creativecommons.org/licenses/by-sa/3.0/)
 
 --
 
-# Your Mission
+# Exercise 2
 
-* Implement Game of Life
-	* <!-- .element: class="fragment" --> **Just kidding!**
-* <!-- .element: class="fragment" --> `fork` the workshop repository 
-* Implement a new feature <!-- .element: class="fragment" -->
-	* <!-- .element: class="fragment" --> Random pattern in `gksol.patterns`
+* Implement the advancing of the board with time <!-- .element: class="fragment" -->
+	* <!-- .element: class="fragment" --> `advance` function in `gksolite.plain`
+* Follow the gitflow workflow for your development
 
 --
+
 
 # Hints
 
 * Use a feature branch for implementation
 	* Don't forget about `--no-ff` when merging
 * Make use of a `develop` branch
+* The `board` already provides a function for deriving the number of neighbours
