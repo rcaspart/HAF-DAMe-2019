@@ -1,6 +1,6 @@
 # Exercise 0
 
-* `goto` https://mainekuehn.github.io/workshop-collaborative_software/ to see this presentation
+* `goto` https://GKS-2018-CollaborativeSoftware.github.io/workshop-collaborative_software/ to see this presentation
 * Get involved and be part of the team!
 
 
