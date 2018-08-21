@@ -11,3 +11,11 @@
 		write your GitHub identification on a piece of paper
 	while not invited:
 		sleep
+
+--
+
+# Setting up the environment
+
+* For this workshop we will use jupyterhub
+* You will be given a user gksXX with a password
+* You can use it to log in on gks-jupyterhub.scc.kit.edu
