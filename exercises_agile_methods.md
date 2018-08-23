@@ -10,20 +10,7 @@ Johan G. Bonte / [CC-BY-SA-3.0](http://creativecommons.org/licenses/by-sa/3.0/)
 
 * 2D playing field of *cells*
 * Each cell is either dead or alive
-* Neighbours preserve, kill or spawn alive cells
-
-
-	###		o cell
-	#o#		# neighbour
-	###
-
---
-
-# The Cells
-
-* 2 Neighbours: Survive
-* 3 Neighbours: Spawn or Survive
-* `or die`
+* The board is initialized following a given pattern
 
 --
 

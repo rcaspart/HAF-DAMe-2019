@@ -16,6 +16,6 @@
 
 # Setting up the environment
 
-* For this workshop we will use jupyterhub
-* You will be given a user gksXX with a password
-* You can use it to log in on gks-jupyterhub.scc.kit.edu
+* For this workshop you can either use your own laptop or the provided jupyterhub
+    * Each of you will be given a user gksXX with a password
+    * You can use it to login on gks-csd.scc.kit.edu

@@ -1,4 +1,4 @@
-# Game of Life (2)
+# Exercise 2
 
 * The board develops over time
 * Neighbours preserve, kill or spawn alive cells
@@ -18,11 +18,11 @@
 
 --
 
-# Exercise 2
+# Your Mission
 
 * Implement the advancing of the board with time <!-- .element: class="fragment" -->
 	* <!-- .element: class="fragment" --> `advance` function in `gksolite.plain`
-* Follow the gitflow workflow for your development
+* <!-- .element: class="fragment" --> Follow the gitflow workflow for your development
 
 --
 
@@ -32,4 +32,4 @@
 * Use a feature branch for implementation
 	* Don't forget about `--no-ff` when merging
 * Make use of a `develop` branch
-* The `board` already provides a function for deriving the number of neighbours
+* <!-- .element: class="fragment" --> The `board` provides a function for determining the number of neighbours for a cell
