@@ -1,3 +1,13 @@
+# Exercise 1
+
+* Get agile!
+
+	if you have no neighbour next to you:
+		choose another seat
+		move
+
+--
+
 # Game of Life
 
 ![Game of Life](resources/Gospers_glider_gun.gif)
