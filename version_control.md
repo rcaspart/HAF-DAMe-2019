@@ -85,6 +85,7 @@ Use colors to show `git` information
 	$ echo ".idea/" >> .gitignore
 
 * There are predefined templates for programming languages, operating systems, etc.
+	* e.g. check [https://github.com/github/gitignore](https://github.com/github/gitignore)
 
 --
 
