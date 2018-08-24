@@ -2,6 +2,7 @@
 
 * Get agile!
 
+
 	if you have no neighbour next to you:
 		choose another seat
 		move
