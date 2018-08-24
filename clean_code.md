@@ -42,16 +42,11 @@ Instead, every time you look at a piece of code, improve it a bit <!-- .element:
 
 ## What is wrong here?
 
-	from MaKaC.i18n import _
-
-	def _getCheckedIn(self):
-	    conf = self._registrant.getConference()
-	    if not conf.getRegistrationForm().getETicket().isEnabled():
-	        return "-"
-	    elif self._registrant.isCheckedIn():
-	        return _("Yes")
-	    else:
-	        return _("No")
+    def daysInYear(year):
+        days = 365
+        if (year % 4 == 0 and year % 100 != 0) or year % 400 == 0:
+            days += 1
+        return days
 
 --
 
