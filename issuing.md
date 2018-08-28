@@ -1,6 +1,5 @@
-# Issuing
 
-*todo comic*
+![issuing](resources/issues.png)
 
 --
 
