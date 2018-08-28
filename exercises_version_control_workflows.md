@@ -20,8 +20,8 @@
 
 # Your Mission
 
-* Implement the advancing of the board with time <!-- .element: class="fragment" -->
-	* <!-- .element: class="fragment" --> `advance` function in `gksolite.plain`
+* Currently the board uses a default number for neighbours when advancing <!-- .element: class="fragment" -->
+	* <!-- .element: class="fragment" --> Adapt this behaviour in the `advance` function in `gksolite.plain`
 * <!-- .element: class="fragment" --> Follow the gitflow workflow for your development
 
 --
@@ -31,5 +31,4 @@
 
 * Use a feature branch for implementation
 	* Don't forget about `--no-ff` when merging
-* Make use of a `develop` branch
 * <!-- .element: class="fragment" --> The `board` provides a function for determining the number of neighbours for a cell
