@@ -52,59 +52,41 @@ Instead, every time you look at a piece of code, improve it a bit <!-- .element:
 
 ## What is wrong here? (2)
 
-	def _initStandardPersonalData(self):
-	    self._data = PersistentMapping()
-	    self._sortedKeys = PersistentList()
-	    p = PersonalDataFormItem({'id':'title', 'name': "Title", 'input':'list', 'mandatory':False})
-	    self._data[p.getId()] = p
-	    self._sortedKeys.append(p.getId())
-	    p = PersonalDataFormItem({'id':'firstName', 'name': "First Name", 'input':'text', 'mandatory':True})
-	    self._data[p.getId()] = p
-	    self._sortedKeys.append(p.getId())
-	    p = PersonalDataFormItem({'id':'surname', 'name': "Surname", 'input':'text', 'mandatory':True})
-	    self._data[p.getId()] = p
-	    self._sortedKeys.append(p.getId())
-	    p = PersonalDataFormItem({'id':'position', 'name': "Position", 'input':'text', 'mandatory':False})
-	    self._data[p.getId()] = p
-	    self._sortedKeys.append(p.getId())
-	    p = PersonalDataFormItem({'id':'institution', 'name': "Institution", 'input':'text', 'mandatory':True})
-	    self._data[p.getId()] = p
-	    self._sortedKeys.append(p.getId())
-	    p = PersonalDataFormItem({'id':'address', 'name': "Address", 'input':'text', 'mandatory':False})
-	    self._data[p.getId()] = p
-	    self._sortedKeys.append(p.getId())
-	    p = PersonalDataFormItem({'id':'city', 'name': "City", 'input':'text', 'mandatory':True})
-	    self._data[p.getId()] = p
-	    self._sortedKeys.append(p.getId())
-	    p = PersonalDataFormItem({'id':'country', 'name': "Country/Region", 'input':'list', 'mandatory':True})
-	    self._data[p.getId()] = p
-	    self._sortedKeys.append(p.getId())
-	    p = PersonalDataFormItem({'id':'phone', 'name': "Phone", 'input':'text', 'mandatory':False})
-	    self._data[p.getId()] = p
-	    self._sortedKeys.append(p.getId())
-	    p = PersonalDataFormItem({'id':'fax', 'name': "Fax", 'input':'text', 'mandatory':False})
-	    self._data[p.getId()] = p
-	    self._sortedKeys.append(p.getId())
-	    p = PersonalDataFormItem({'id':'email', 'name': "Email", 'input':'hidden', 'mandatory':True})
-	    self._data[p.getId()] = p
-	    self._sortedKeys.append(p.getId())
-	    p = PersonalDataFormItem({'id':'personalHomepage', 'name': "Personal homepage", 'input':'text', 'mandatory':False})
-	    self._data[p.getId()] = p
-	    self._sortedKeys.append(p.getId())
+	def generate_checksum(self):
+        nnc = 'PREFIX{0}{1}{2}{3}'.format("%04d" % int(self.account.id), datestr, num, self.sender.id)
+        checksum1 = nnc[-2]
+        checksum2 = 0 + (1 + 2 + int(nnc[4]) + int(nnc[6]) + int(nnc[8]) + int(nnc[10]) + int(nnc[12]) + int(nnc[14])+ int(nnc[16]) + int(nnc[18]) + int(nnc[20])) * 4
+        checksum3 = 0 + int(nnc[3]) + int(nnc[5]) + int(nnc[7]) + int(nnc[9]) + int(nnc[11]) + int(nnc[13]) + int(nnc[15]) + int(nnc[17]) + int(nnc[19] + int(nnc[21])) * 7
+        checksum4 = checksum2 + checksum3
+        checksum = 0
+        while (checksum4 + checksum) % 10:
+			checksum += 1
 
 --
 
 ## What is wrong here? (3)
 
-	def setConference( self, params ):
-        if not ("confId" in params.keys()) and "confid" in params.keys():
-            params["confId"] = params["confid"]
-        if not ("confId" in params.keys()) and "conference" in params.keys():
-            params["confId"] = params["conference"]
-        if isinstance(params.get("confId", ""), list):
-            params["confId"] = params["confId"][0]
-        if not ("confId" in params.keys()) or \
-           params["confId"] == None or \
-               params["confId"].strip()=="":
-            raise errors.MaKaCError( _("conference id not set"))
-        self.__confId = params["confId"]
+	def calculator():
+		print('Welcome to this calculator!')
+		print('It can add, subtract, multiply and divide whole numbers from 0 to 50')
+		num1 = int(input('Please choose your first number: '))
+		sign = input('What do you want to do? +, -, /, or *: ')
+		num2 = int(input('Please choose your second number: '))
+
+		if num1 == 0 and sign == '+' and num2 == 0:
+			print("0+0 = 0")
+		if num1 == 0 and sign == '+' and num2 == 1:
+			print("0+1 = 1")
+		if num1 == 0 and sign == '+' and num2 == 2:
+			print("0+2 = 2")
+		[...]
+		if num1 == 1 and sign == '+' and num2 == 0:
+			print("1+0 = 1")
+		if num1 == 1 and sign == '+' and num2 == 1:
+		print("1+1 = 2")
+		[...]
+		if num1 == 50 and sign == '*' and num2 == 49:
+			print("50*49 = 2450")
+		if num1 == 50 and sign == '*' and num2 == 50:
+		print("50*50 = 2500")
+
