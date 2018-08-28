@@ -31,3 +31,12 @@
 * Runs on Travis CI servers
 * Free for public github repos (no simultaneous builds unless you pay)
 * Very easy to add jobs (stored in `.travis.yml` in repo)
+
+--
+
+## Continous Code coverage
+
+* Also the coverage can be *continously* tested
+* Commonly used provider is CodeCov
+* Free for public github repos
+* Easy to setup and configure (`codecov.yml` in repo)
