@@ -38,6 +38,10 @@ We focus on `git` as an example for a decentralised version control
 
 --
 
+![git](resources/git_in_a_nutshell.png)
+
+--
+
 ## Using `git` locally
 
 	# Initialise an empty git repository
