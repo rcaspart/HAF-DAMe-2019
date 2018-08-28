@@ -20,8 +20,8 @@
 
 # Your Mission
 
-* Currently the board uses a default number for neighbours when advancing <!-- .element: class="fragment" -->
-	* <!-- .element: class="fragment" --> Adapt this behaviour in the `advance` function in `gksolite.plain`
+* Currently the board uses a default number of neighbours for each cell when advancing <!-- .element: class="fragment" -->
+	* <!-- .element: class="fragment" --> Adapt this behaviour to calculate the number of neighbours in the `advance` function in `gksolite.plain`
 * <!-- .element: class="fragment" --> Follow the gitflow workflow for your development
 
 --

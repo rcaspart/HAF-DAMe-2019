@@ -10,4 +10,5 @@
 
 * Create an *issue* in the [GKS-2018-CollaborativeSoftware repository](https://github.com/GKS-2018-CollaborativeSoftware/workshop-collaborative_software)
 * Include references to the affected code
+* Mention and request feedback from a colleague
 * Assign the issue to your neighbour
