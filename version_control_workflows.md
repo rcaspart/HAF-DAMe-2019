@@ -2,9 +2,9 @@
 
 Larger projects usually require more complex workflows than the centralised workflow to manage simultaneous code changes e.g. for different features
 
-* Feature Branch Workflow <!-- .element: class="fragment" -->
-* Gitflow Workflow <!-- .element: class="fragment" -->
+* Gitlabflow Workflow <!-- .element: class="fragment" -->
 * Forking Workflow <!-- .element: class="fragment" -->
+* Gitflow Workflow <!-- .element: class="fragment" -->
 
 --
 
@@ -76,20 +76,19 @@ Larger projects usually require more complex workflows than the centralised work
 
 --
 
-### Gitflow Workflow
+### "Gitlabflow" Workflow
 
-![A successful Git branching model](resources/git_branching_model.png)
-
-Note:
-Source [http://nvie.com/posts/a-successful-git-branching-model/](http://nvie.com/posts/a-successful-git-branching-model/)
+![Working with feature branches](resources/version_control_feature.png)
 
 --
 
-### Gitflow Workflow (2)
+### "Gitlabflow" Workflow (2)
 
 * Strict branching model around the concept of a project release
 * Robust framework for management of larger projects
-* Definition of specific roles for the different branches and their interaction
+* Master branch as main branch
+* Features are developed in dedicated branches and merged in the master
+* Dedicated branches for deployment of projects
 
 --
 
@@ -115,8 +114,8 @@ Source [http://nvie.com/posts/a-successful-git-branching-model/](http://nvie.com
 
 ### What works for us
 
-* Combination from Feature and Gitflow Workflow
-* Differentiation between `master` and `develop`
+* Combination from Gitlab and Forking Workflow
+    * For larger groups it is easier and more flexible to use forks
 * Inclusion of `feature` branches
 * No further release or hotfix branches
 
