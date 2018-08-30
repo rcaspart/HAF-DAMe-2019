@@ -36,10 +36,6 @@ Instead, every time you look at a piece of code, improve it a bit <!-- .element:
 
 --
 
-> `assert` No Indico Developer attending the workshop?
-
---
-
 ## What is wrong here?
 
     def daysInYear(year):
