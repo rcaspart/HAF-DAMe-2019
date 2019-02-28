@@ -1,13 +1,11 @@
 
-> Essentially every software project having more than one developer is a collaborative project 
-
-Benedikt Hegner on Collaborative Software Development, GridKa School 2017, 28.08.2017 <!-- .element: class="fragment" -->
+# Writing Maintainable Software
 
 --
 
 # Introduction
 
-For us, *collaborative software development* already starts with you
+For me the need for *maintainable software* already starts with you
 
 ... and your future you! <!-- .element: class="fragment" -->
 
@@ -20,18 +18,13 @@ https://xkcd.com/1421/
 
 --
 
-# Workshop on *Collaborative Software Development*
-
---
-
 # Disclaimer
 
-* There is too much of topics we could cover here
-* ... but maybe we shouldn't, but we will as needed <!-- .element: class="fragment" -->
-	* Agile development Methods <!-- .element: class="fragment" -->
+* There are too many topics we could cover here
+* We will focus on a few selected and merely touch others <!-- .element: class="fragment" -->
 	* Version Control <!-- .element: class="fragment" -->
+	* Ticketsystems <!-- .element: class="fragment" -->
 	* Software Testing <!-- .element: class="fragment" -->
-	* Clean Code <!-- .element: class="fragment" -->
 	* Documentation including comments <!-- .element: class="fragment" -->
 	* Continuous Integration <!-- .element: class="fragment" -->
-	* Ticketsystems and wikis <!-- .element: class="fragment" -->
+	* Clean Code <!-- .element: class="fragment" -->

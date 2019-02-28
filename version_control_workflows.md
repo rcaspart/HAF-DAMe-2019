@@ -1,7 +1,9 @@
 ## Improving your daily workflow
 
-Larger projects usually require more complex workflows than the centralised workflow to manage simultaneous code changes e.g. for different features
+Larger projects usually require more complex workflows to manage simultaneous code changes e.g. for different features
 
+* Centralised Workflow <!-- .element: class="fragment" -->
+* Feature Branch Workflow <!-- .element: class="fragment" -->
 * Gitlabflow Workflow <!-- .element: class="fragment" -->
 * Forking Workflow <!-- .element: class="fragment" -->
 * Gitflow Workflow <!-- .element: class="fragment" -->
@@ -68,39 +70,43 @@ Larger projects usually require more complex workflows than the centralised work
 #### Merging a feature branch
 
 	$ git checkout master
-	$ git pull
-	# the actual merge of the new feature
-	$ git pull origin <feature>
-	# pushing it back to origin
-	$ git push
+	# create a new commit to retain historical infos
+	$ git merge --no-ff <feature>
+	# delete the branch after merging
+	$ git branch -d <feature>
+	$ git push origin master
 
 --
 
-### "Gitlabflow" Workflow
+#### Merging a feature branch
 
 ![Working with feature branches](resources/version_control_feature.png)
 
 --
 
-### "Gitlabflow" Workflow (2)
+#### Finishing a feature branch
+
+The merging can also be done based on branches only present on the remote
+
+	$ git checkout master
+    # fetch any upstream changes
+	$ git pull
+	# the actual merge of the new feature
+	$ git pull --rebase origin <feature>
+	# pushing the master with the feature back to origin
+	$ git push
+    # deleting the remote feature branch
+    $ git push origin --delete <feature>
+
+--
+
+### "Gitlabflow" Workflow
 
 * Strict branching model around the concept of a project release
 * Robust framework for management of larger projects
 * Master branch as main branch
 * Features are developed in dedicated branches and merged in the master
 * Dedicated branches for deployment of projects
-
---
-
-#### Finishing a feature branch
-
-	# a new branch is merged into develop
-	$ git checkout develop
-	# create a new commit to retain historical infos
-	$ git merge --no-ff <feature>
-	# delete the branch after merging
-	$ git branch -d <feature>
-	$ git push origin develop
 
 --
 
@@ -112,9 +118,9 @@ Larger projects usually require more complex workflows than the centralised work
 
 --
 
-### What works for us
+### Which workflow to choose?
 
-* Combination from Gitlab and Forking Workflow
+* For me generally a combination of Gitlab and Forking Workflow
     * For larger groups it is easier and more flexible to use forks
 * Inclusion of `feature` branches
 * No further release or hotfix branches
@@ -136,9 +142,18 @@ Larger projects usually require more complex workflows than the centralised work
 * Commit often
 * Try not to mix up different things into one commit, make up logical units
 * Think about your commit messages
-	* Include references to tickets if available
-
+	* Include references to tickets if available (we will come back to this later)
 
 	$ git commit -m "$(curl -sL https://bit.ly/funny-mesg | sh)"
 
 * Branching is cheap
+    * Use dedicated branches for each feature
+
+--
+
+## Other important aspects
+
+There are many other aspects which we unfortunately can not cover today
+
+* Keeping the log clear of unnecessary commits
+  * Sqashing of multiple commits into a single one

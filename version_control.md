@@ -1,3 +1,6 @@
+# Version Control
+
+--
 
 ![Final.doc](resources/final_draft_version_control.png)
 

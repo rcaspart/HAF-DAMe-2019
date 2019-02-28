@@ -9,7 +9,7 @@
 * But more importantly
 	* The documentation needs to be written at all
 * Challenge <!-- .element: class="fragment" -->
-    * Keep your documentation up-to-date while your code advances <!-- .element: class="fragment" -->
+    * Keep your documentation up-to-date while your code advances
 
 --
 

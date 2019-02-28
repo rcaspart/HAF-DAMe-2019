@@ -6,10 +6,10 @@
 # How to communicate
 
 * When working in a team it is important to communicate problems and improvements
-* Several ways to achieve this
-    * Chat-programs
-    * Email lists
-    * Issue tracking on e.g. github
+* Which ways did you already use for this?
+    * Chat-programs <!-- .element: class="fragment" -->
+    * Email lists <!-- .element: class="fragment" -->
+    * Issue tracking on e.g. github <!-- .element: class="fragment" -->
 
 --
 

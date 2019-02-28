@@ -1,4 +1,4 @@
-# Continuous Integration
+# Outlook: Continuous Integration
 
 * Automated testing of developer code
 * Started as running all tests locally to ensure quality
