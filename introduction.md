@@ -25,6 +25,6 @@ https://xkcd.com/1421/
 	* Version Control <!-- .element: class="fragment" -->
 	* Ticketsystems <!-- .element: class="fragment" -->
 	* Software Testing <!-- .element: class="fragment" -->
-	* Documentation including comments <!-- .element: class="fragment" -->
 	* Continuous Integration <!-- .element: class="fragment" -->
+	* Documentation including comments <!-- .element: class="fragment" -->
 	* Clean Code <!-- .element: class="fragment" -->
