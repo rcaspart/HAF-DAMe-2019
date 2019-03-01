@@ -36,9 +36,9 @@ def parse(inputs):
                     "Provided input not understood. Either the operation is not supported or the input is malformed %s" % ip))
             if result == None:
                 logger.debug("left-hand argument %s" % ip)
-                result = tmp_input
+                result = tmp_ip
             else:
                 logger.debug("right-hand argument %s" % ip)
-                result = operation(result, tmp_input)
+                result = operation(result, tmp_ip)
                 logger.debug("intermediate result %s" % ip)
     return result
