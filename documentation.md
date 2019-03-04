@@ -87,7 +87,7 @@ If it contains a reference to a specific algorithm you are just implementing, ev
 
 ## Pants down
 
-Did you write proper documentation when you implemented your features in `gksolite`?
+Did you write proper documentation when you implemented your features and tests for the calculator?
 
 * Adapt your documentation
 * Build the documentation by utilising Sphinx

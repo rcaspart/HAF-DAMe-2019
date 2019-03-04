@@ -14,7 +14,8 @@
 # Your tasks
 
 * Add unit tests for the features you added on your branch before
-* Can you think of anything else that needs testing?
+* The current set of unit tests does not cover all cases
+    * Can you think of anything else that needs testing?
     * You can find a list of possible test cases in the [documentation](https://docs.python.org/3/library/unittest.html#test-cases)
     * *Hint* look at the output of the coverage
     * Add corresponding unit tests

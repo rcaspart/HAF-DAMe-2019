@@ -4,8 +4,6 @@
     * https://github.com/dame-maintainable-software
 * We will use this projekt for the course today
 
-
-
 --
 
 # Your tasks
@@ -22,8 +20,8 @@
 
 # Your tasks (2)
 
-* Currently only adding and subtracting is implemented
-* Add the necessary functions to multiply and devide
+* Currently only adding and deviding is implemented
+* Add the necessary functions to subtract and multiply
     * Make sure your `git` is configured properly
     * Use a dedicated feature branch for your development
     * Use reasonable commit messages
