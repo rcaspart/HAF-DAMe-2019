@@ -5,12 +5,12 @@ def add(lhs, rhs):
 
 def subtract(lhs, rhs):
     """subtract the two numbers lhs and rhs. In this implementation we use our own add function"""
-    return add(lhs, rhs*(-1))
+    return None
 
 
 def multiply(lhs, rhs):
     """multiply the two numbers lhs and rhs"""
-    return lhs*rhs
+    return None
 
 
 def devide(lhs, rhs):
