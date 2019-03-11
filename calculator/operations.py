@@ -14,5 +14,5 @@ def multiply(lhs, rhs):
 
 
 def devide(lhs, rhs):
-    """devide the numbers lhs by rhs. In this implementation we use our own multiply function"""
+    """devide the numbers lhs by rhs"""
     return lhs/rhs
